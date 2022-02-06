@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxis Scooters</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Spajanje s CSS-om -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1bbe2042f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/logo-kruzni.png" type="image/x-icon">
+</head>
+<body onmousedown="return false" onselectstart="return false"> <!--kopiranje teksta onemogućeno-->
+    <main>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="logo" src="assets/img/logo-kruzni.png" alt="logo">
+            </div>
+            <button class="nav-toggle">
+                <span class="hamburger"></span>
+            </button>
+            <div class="overlay">
+                <ul class="links2">
+                    <li><a class="active main" href="#home">Početna</a></li>
+                <li><a class="main" href="#info">O nama</a></li>
+                <li><a class="main" href="#cjenik">Cjenik</a></li> 
+                </ul>
+            </div>
+            <ul class="links">
+                <li><a class="active main" href="#home">Početna</a></li>
+                <li><a class="main" href="#info">O nama</a></li>
+                <li><a class="main" href="#cjenik">Cjenik</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="landing" id="home">
+        <div class="row">
+            <div class="col-md-6 left-section">
+                <h1 class="h1">Maxis Scooters</h1>
+                <p>
+                    Pružamo najpovoljniji oblik prijevoza na ovim prostorima!
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img class="picture" src="./assets/img/scg.gif" width="500" alt="e-scooter"/>
+            </div>
+        </div>
+    </section>
+    <section class="about-us" id="info">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="about-type">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about-info">
+                                    <div class="details">
+                                        <h3>Maxis je tvrtka koja pruža usluge najma električnih romobila.
+                                            <br>Sjedište se nalazi u Španjolskoj, tvrtka je osnovana 2013.
+                                            </h3>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="rigth-arrow">
+                                    <img class="esc1" src="./assets/img/esc2-modified.png" alt="e-scooter" width="450">
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="about-type">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about-info">
+                                    <div class="details">
+                                        <h3>Svoj put širenja ovakvog prijevoza u drugim zemljama smo započeli davne 2014.,
+                                            <br>a neprestano se trudimo biti još bolji.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                            <div class="rigth-arrow">
+                                <img class="esc2" src="./assets/img/esc-modified.png" alt="e-scooter" width="450">
+                            </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="about-type">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about-info">
+                                    <div class="details">
+                                        <h3>S ponosom možemo reći kako svake godine ostvarujemo dobre rezultate,
+                                            <br>zahvaljujući korisnicima koji biraju moderni prijevoz.
+                                        </h3>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="rigth-arrow">
+                                    <img class="esc3" src="./assets/img/esc1-modified.png" alt="e-scooter" width="450">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button style="z-index: 100;" class="carousel-control-prev " type="button"
+                    data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span><img src="./assets/img/icons/arrow-left.svg" alt="arrow-left"></span>
+            </button>
+            <button style="z-index: 100;" class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span><img src="./assets/img/icons/arrow-right.svg" alt="arrow-right"></span>
+            </button>
+        </div>
+    </section>
+    <section class="faq" id="cjenik">
+        <h2>Naknade za korištenje</h2>
+        <p>Kako bi svojim korisnicima pružili kvalitetnu uslugu,<br>nudimo nekoliko paketa po povoljnim cijenama!</p>
+
+        <div class="accordion">
+            <div class="accordion__item">
+                <div class="accordion__title">Standardni paket</div>
+                <div class="accordion__body">
+                    <div class="accordion__content">
+                        <ul>
+                            <li>0,50 kn/min</li>
+                            <li>Naknada za otključavanje: 2 kn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">Studentska pretplata</div>
+                <div class="accordion__body">
+                    <div class="accordion__content">
+                        <ul>
+                            <li>Mjesečna naknada: 99 kn</li>
+                            <li>Uključeno 200 minuta</li>
+                            <li>Bez naknade za otključavanje</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">Premium pretplata</div>
+                <div class="accordion__body">
+                    <div class="accordion__content">
+                        <ul>
+                            <li>Godišnja naknada: 999 kn</li>
+                            <li>Uključeno 2000 minuta</li>
+                            <li>Bez naknade za otključavanje</li>
+                            <li>Mogućnost otplate na 2-6 rata</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="kontakt">
+        <div class="small-footer">
+            <div class="row smaller">
+                <div class="col-md-3">
+                    <img src="./assets/img/logo.jpg" width="180" alt="logo" class="img2">
+                    <div class="icons">
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            <div class="copyright">
+                <p>Copyright © 2021 - 2022 Maxis Scooters Ltd.</p>
+            </div>
+        </div>
+        <div class="footer-txt">
+            <p>
+                Impressum: <br>Maxis Scooters Ltd.<br>Vukovarska 241<br>+385 1 5000 200
+            </p>
+        </div>
+    </footer>
+</main>
+<!-- Za jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Integracija JS-->
+<script src="assets/js/script.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+</html>
