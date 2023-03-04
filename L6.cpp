@@ -26,6 +26,8 @@ void PrintList(position);
 void PushStack(position, int);
 void PushRow(position, int);
 void Pop(position);
+int DelLN(struct Node*);
+
 
 int main()
 {
@@ -34,6 +36,7 @@ int main()
 	row.next = NULL;
 
 	int sel = 1;
+	int isValid = 0;
 
 	while (sel != 0)
 	{
@@ -87,6 +90,9 @@ int main()
 	}
 	system("pause");
 	return 0;
+	
+        DelLN(&stack);
+	DelLN(&row);
 }
 
 int RandomNum(int minV, int maxV)
@@ -155,4 +161,15 @@ void Pop(position p) {
 		p->next = tmp->next;
 		free(tmp);
 	}
+}
+int DelLN(struct Node* head)
+{
+	struct Node* tmp;
+	while (head->next != NULL)
+	{
+		tmp = head->next;
+		head->next = tmp->next;
+		free(tmp);
+	}
+	return 0;
 }
